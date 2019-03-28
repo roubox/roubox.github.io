@@ -1,0 +1,49 @@
+$accentColor: #15a4fa
+$accentLightColor1: #48baff
+$accentLightColor2: #5fc3ff
+@mixin bold
+     font-weight: 700
+
+h1, h2, h3, h4, h5, h6, p 
+    margin: 0
+    padding: 0
+    
+body
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    background-color: #f6f9f9
+    font-family: 'Lato', sans-serif;
+    font-weight: 400
+    font-size: 20px
+    color: #999999
+    
+.mcont
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 15px
+    
+.simple-button
+    background-color: $accentColor
+    border: none
+    border-radius: 3px
+    color: #fff
+    font-size: 20px
+    line-height: 1
+    padding: 22px 30px
+    &:hover
+        cursor: pointer
+    &:focus
+        outline: none
+    
+@import header 
+@import desc 
+@import features 
+@import showcase
+@import form
+@import footer
+
+
+        
+
+        

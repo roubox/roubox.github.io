@@ -1,0 +1,87 @@
+.form-block
+    text-align: center
+    background: url("../img/footerBG.png") no-repeat center
+    background-size: cover
+    position: relative
+    &::after
+        content: ""
+        background-color: rgba(#2d3950, 0.9)
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+    & .upper-layer
+        position: relative
+        z-index: 1
+    &-title
+        padding-top: 70px
+        font-size: 41px
+        color: #fff
+    &-subtitle
+        display: block
+        margin: 15px 50px auto
+        font-size: 15px
+        color: #999
+    & .form
+        margin: 55px auto 0px
+        width: 100%
+        max-width: 550px
+        display: flex
+        flex-direction: column
+        &-input
+            font-size: 15px
+            background-color: transparent
+            padding: 20px 24px
+            color: #ffffff
+            border: 1px solid #999999
+            border-radius: 2px
+            margin-bottom: 20px
+            // width: 100%
+            &:nth-child(3)
+                height: 120px
+                resize: none
+            &:focus
+                outline: none
+                border: 1px solid #fff
+        &-send-block
+            // width: 100%
+            margin-bottom: 110px
+            text-align: left
+            display: flex
+            justify-content: space-between
+            align-items: center
+            & .subscribe-checkbox
+                display: none
+                &:checked + label:before
+                    content: "\2714"
+            & .checkbox-label
+                color: #fff
+                font-size: 15px
+                // float: left
+                &:before
+                    display: inline-block
+                    content: ""
+                    // color: $accentColor
+                    color: #fff
+                    font-size: 20px
+                    line-height: 17px
+                    width: 17px
+                    height: 17px
+                    background-color: #99a0a9
+                    border-radius: 2px
+                    margin-right: 15px
+                    vertical-align: text-top
+                    text-align: center
+            & .simple-button
+                padding: 15px 50px
+
+@media  (max-width: 424px)
+    .form-block
+        & .form
+            & .checkbox-label
+                margin: 30px 0
+            &-send-block
+                flex-direction: column
+            & .simple-button
+                width: 100%
