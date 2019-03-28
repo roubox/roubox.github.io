@@ -433,7 +433,7 @@ body {
 }
 
 .footer p {
-  font-family: "Times New Roman" 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #999999;
   font-size: 15px;
 }
