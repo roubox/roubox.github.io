@@ -1,0 +1,77 @@
+.showcase-block
+    text-align: center
+    & .mcont
+        max-width: 1170px
+.showcase
+    margin-top: 80px
+    &-title
+        font-weight: 400
+        font-size: 41px
+        color: #2d3950
+        margin-bottom: 20px
+    &-subtitle
+        display: block
+        margin-bottom: 80px
+        font-size: 15px
+    &-cards
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &-card
+        // width: 100%
+        // height: 100%
+        position: relative
+        max-width: 360px 
+        // min-width: 300px
+        // min-width: 360px
+        max-height: 260px
+        margin: 15px
+        // padding: 15px
+        // overflow: hidden
+        &-img
+            width: 100%
+            // height: 100%
+            // overflow: hidden
+        &-cover
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            flex-direction: row
+            align-items: center
+            // background-color: rgba(#15a4fa, 0.0)
+            visibility: hidden
+            background-color: rgba(#15a4fa, 0.0)
+            position: absolute
+            top: 0
+            left: 0
+            transition: all .3s
+            & .showcase-card-buttons
+                visibility: hidden
+        &:hover
+            // &::after
+            //     content: ""
+            //     background-color: rgba(green, 0.7)
+            //     position: absolute
+            //     top: 0
+            //     left: 0
+            //     width: 100%
+            //     height: 100%
+            .showcase-card-cover
+                background-color: rgba(#15a4fa, 0.9)
+                visibility: visible
+            .showcase-card-buttons
+                visibility: visible
+                z-index: 3
+        &-buttons
+        &-button
+            display: inline-block
+            width: 40px
+            height: 40px
+            border: 1px solid #fff
+            border-radius: 5px
+            color: #fff
+            margin: 5px
+            & i
+                line-height: 40px
+                font-size: 15px
